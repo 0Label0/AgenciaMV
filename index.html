@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgenciaMV</title>
+  <link rel="stylesheet" href="./styles/general.css">
+  <link rel="stylesheet" href="./styles/index.css">
+  <link rel="stylesheet" href="./styles/carousel.css">
+  <link rel="stylesheet" href="./styles/services.css">
+  <link rel="stylesheet" href="./styles/form.css">
+  <link rel="stylesheet" href="./styles/footer.css">
+  <script src="https://kit.fontawesome.com/50ec7a7a01.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+  <header class="header">
+    <section class="header-top">
+      <h4 class="title">MV AGENCIA</h4>
+
+      <!-- Menú burger -->
+       
+      <i class="fa fa-bars burger-menu"></i>
+       
+    </section>
+
+    <section class="header-bottom">
+      <h1 class="title">
+        SOMOS
+        <br>
+        MARKETING
+      </h1>
+
+      <h4 class="subtitle">VENDEMOS RESULTADOS</h4>
+
+      <button class="btn"><a href="#contact">CONTACTA CON NOSOTROS</a></button>
+    </section>
+
+  </header>
+
+
+  <main>
+
+    
+    <section class="how-works">
+      <h2 class="title">CÓMO TABAJAMOS</h2>
+      <div class="carousel-container">
+        <div class="carousel">
+          <div class="carousel-track">
+            <img src="./assets/img/img1.webp" class="inactive" draggable="false" alt="">
+            <img src="./assets/img/img2.jpg" class="inactive" draggable="false" alt="">
+            <img src="./assets/img/img4.jpg" class="inactive" draggable="false" alt="">
+            <img src="./assets/img/img3.png" class="inactive" draggable="false" alt="">
+          </div>
+        </div>
+        <div class="dots">
+          <div class="dot active"></div>
+          <div class="dot "></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+      </div>
+  
+    </section>
+
+
+    <section class="services-container">
+      <h2 class="title">SERVICIOS</h2>
+      <div class="services">
+        <div class="card-container">
+            <div class="card type-1">
+              <div class="arrow-card">
+                  <i class="fa-solid fa-arrow-right"></i>
+              </div>
+              <div>
+                <h3>ESTRATEGIA <br> COMERCIAL</h3>
+                <p>ESTUDIAMOS TU CUCLO DE VENTAS</p>
+                <button class="btn-card"><span>SABER MÁS</span> > </button>
+              </div>
+            </div>
+            <div class="card type-2">
+              <div class="arrow-card">
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+              <div>
+                <h3>ESTRATEGIA <br> COMERCIAL</h3>
+                <p>ESTUDIAMOS TU CUCLO DE VENTAS</p>
+                <button class="btn-card"><span>SABER MÁS</span> > </button>
+              </div>
+            </div>
+            <div class="card type-3">
+              <div class="arrow-card">
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+              <div>
+                <h3>ESTRATEGIA <br> COMERCIAL</h3>
+                <p>ESTUDIAMOS TU CUCLO DE VENTAS</p>
+                <button class="btn-card"><span>SABER MÁS</span> > </button>
+              </div>
+            </div>
+         
+          </div>
+        </div>
+        <div class="dots-2">
+          <div class="dot-2 active"></div>
+          <div class="dot-2"></div>
+          <div class="dot-2"></div>
+        </div>
+    </section>
+
+    <div class="container">
+
+        <article class="container-form" id="contact">
+          <form class="form">
+            <h2>Rellena el formulario para poder contactar</h2>
+            <div class="section-form">
+              <label for="name">Nombre</label>
+              <input id="name" type="text">
+              <label for="lastname">Apellidos</label>
+              <input id="lastname" type="text">
+              <label for="company">Empresa (Opcional)</label>
+              <input id="company" type="text">
+            </div>
+            <div class="section-form">
+              <label for="tel">Teléfono</label>
+              <input id="tel" type="text">
+              <label for="email">Mail</label>
+              <input id="email" type="text">
+              <label for="cargo">Cargo</label>
+              <input type="cargo" id="cargo">
+            </div>
+            <div class="section-form">
+              <label for="message">Mensaje</label>
+              <textarea id="message"></textarea>
+            </div>
+            <div class="consent">
+              <input type="checkbox" id="consent">
+              <label  for="consent">He leido y aceptado <strong>las políticas de privacidad</strong> y el <strong>aviso legal</strong></label>
+            </div>
+            <div class="section-form">
+              <button type="submit" id="submit">Solicitar más información</button>
+            </div>
+          </form>
+        </article>
+      </section>
+    </div>
+
+  </main>
+
+
+  <footer>
+    <p>1</p>
+    <p>AgenciaMV</p>
+    <p>2</p>
+  </footer>
+
+  <script src="./js/scrollReveal.js"></script>
+  <script src="./js/carousel.js"></script>
+</body>
+</html>

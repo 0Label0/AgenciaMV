@@ -1,0 +1,86 @@
+
+.carousel-container {
+  background: linear-gradient(90deg, #0b3e27, #176542);
+  display: flex;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0px;
+}
+
+.carousel {
+  width: 1000px;
+  overflow: hidden;
+  cursor: grab;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth; 
+
+  padding: 0 40px;  
+  box-sizing: border-box;
+  position: relative;
+
+}
+
+.carousel:active {
+  cursor: grabbing;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.2s ease;
+  padding: 15%;
+}
+
+.carousel-track img {
+  width: 100%;      
+  height: auto;
+  flex: 0 0 80%;     
+  object-fit: cover;
+  scroll-snap-align: start;
+  user-select: none;
+  -webkit-user-drag: none;
+  scroll-snap-align: center;
+  transition: transform 0.3s ease;
+  border-radius: 10px;
+
+
+}
+
+.carousel-track img.inactive {
+  transform: scale(0.8);
+  opacity: 0.8;
+  z-index: 0;
+  
+}
+
+.carousel-track img.active {
+  position: relative; 
+  transform: scale(1.2);
+  opacity: 1;
+  z-index: 100;
+  box-shadow: 4px 4px 20px 8px #000;
+}
+
+.dots {
+  position: relative;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.dot {
+  width: 9px;
+  height: 9px;
+  cursor: pointer;
+  background-color: rgb(236, 236, 236);
+}
+
+.dot.active {
+  background-color: rgb(152, 255, 101);
+
+}
+
